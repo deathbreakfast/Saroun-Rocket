@@ -1,0 +1,19 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.29"
+sauron = "0.43.9"
+console_error_panic_hook = { version = "0.1" }
+log = "0.4"
+console_log = { version = "0.2", features = ["color"] }
+serde = { version = "1.0", features = ["serde_derive"] }
+serde_json = "1.0"
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
